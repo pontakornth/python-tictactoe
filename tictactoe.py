@@ -1,4 +1,5 @@
 def check_win(board):
+    # This function prevents long code.
     def check_equal(n1, n2, n3, value):
         return board[n1] == board[n2] == board[n3] == value
     if (
@@ -33,6 +34,7 @@ board = [
         ]
 turn = 'O'
 def print_board(board):
+    # If there is no O or X, print position so user can type
     def print_tile(tile):
         if board[tile] == '':
             return tile
@@ -43,6 +45,7 @@ def print_board(board):
 
 if __name__ == '__main__':
     print("Tic Tac Toe: ")
+    # The algorithm version is not implemented yet
     print("2 Player Mode")
     while True:
         print(f"Turn {turn} ")
