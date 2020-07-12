@@ -44,7 +44,7 @@ def print_board(board):
 if __name__ == '__main__':
     print("Tic Tac Toe: ")
     print("2 Player Mode")
-    while (not dead_end(board) or check_win(board) is None ):
+    while True:
         print(f"Turn {turn} ")
         print_board(board)
         pos = int(input("Position: "))
